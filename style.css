@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
 /* Variáveis de Cores e Estilos Gerais */
 :root {
-    --bg-color: #0F1624;
+    --bg-color: #121317;
     --text-color: #F1F1F1;
-    --primary-color: #00E1D9;
+    --primary-color: #B6B9FF;
     --secondary-color: #6C63FF;
     --card-bg: #16213E;
 }
@@ -13,6 +15,7 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
+    
 }
 
 body {
@@ -23,10 +26,10 @@ body {
 /* Navegação */
 .navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    padding: 20px 50px;
-    background-color: rgba(15, 22, 36, 0.9);
+    padding: 20px 0px;
+    background-color: rgba(18, 19, 23, 0.89);
     position: fixed;
     width: 100%;
     top: 0;
@@ -66,13 +69,13 @@ nav a:hover {
 .hero {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 150px 50px 100px;
+    justify-content: space-around;
+    padding: 150px 100px;
     min-height: 100vh;
 }
 
 .hero-content {
-    max-width: 600px;
+    max-width: 500px;
 }
 
 .hero h1 {
@@ -108,7 +111,7 @@ nav a:hover {
 
 .btn-primary {
     display: inline-block;
-    background: linear-gradient(90deg, var(--secondary-color), var(--primary-color));
+    background: var(--secondary-color);
     color: white;
     padding: 15px 30px;
     border-radius: 30px;
